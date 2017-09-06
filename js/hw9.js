@@ -72,10 +72,10 @@ $('.enter_Task6').on('click', function(){
 
 			let goods = JSON.parse(data);
 			let out = "";
-			out = out + '<div> Имя товара:' + goods.name + '</div>';
-			out = out + '<div> Вес:' + goods.weight+ '</div> ';
-			out = out + '<div> Стоимость:' + goods.cost + '</div> ';
-			out = out + '<img src="' + goods.img + '"> ';
+			out += '<div> Имя товара:' + goods.name + '</div>';
+			out += '<div> Вес:' + goods.weight+ '</div> ';
+			out +='<div> Стоимость:' + goods.cost + '</div> ';
+			out += '<img src="' + goods.img + '"> ';
 
 			$('.output6').html(out);
 		});
